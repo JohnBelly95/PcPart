@@ -2,9 +2,12 @@ public class Custom extends Customer{
 	String orderDate;
 	String deliverDate;
 	String complete;
-	
-	public Custom(String name,String number, String orderDate,String deliverDate ,String complete){
+	private Store prod;
+	private String str1,str2;
+	private int OrderNum;
+	public Custom(String name,String number,Store prod, String orderDate,String deliverDate ,String complete){
 		super(name, number);
+		this.prod = prod;
 		this.orderDate = orderDate;
 		this.deliverDate = deliverDate;
 		this.complete = complete;
@@ -15,7 +18,7 @@ public class Custom extends Customer{
 	public void setDeliverDate(String d){
 		deliverDate = d;
 	}
-	
+	public void setOrderNum(
 	public void setComplete(String c){
 		complete = c;
 	}
