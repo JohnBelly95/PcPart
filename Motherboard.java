@@ -4,7 +4,9 @@ public class Motherboard extends Pc_accessory {
 	int gates_num;
 	private static String x= "INTEL";
 	private static String y= "AMD";
-	
+	public static final String a = "TYPE";
+	public static final String b = "MEMORY";
+	public static final String c = "GATES";
 	public Motherboard(String name , int year , String constractor , double price, String type, int memory, int gates_num){
 		super(name, year, constractor, price );
 		this.type = type;
@@ -32,7 +34,7 @@ public class Motherboard extends Pc_accessory {
 		return gates_num;
 	}
 	public String toString(){
-		return String.format(super.toString() + "\ntype: " + this.type  + "\nmemory: " + this.memory  + " \nnumber of gates: " + this.gates_num );
+		return String.format(super.toString() + "\n" + a + ": " + this.type  + "\n" + b + ": " + this.memory  + "\n" + c + ": " + this.gates_num );
 	}
 	
 	

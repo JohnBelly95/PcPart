@@ -5,7 +5,8 @@ public class Mouse extends Regionals{
 	private static String y= "OPTICAL";
 	private static String z= "CABLE";
 	private static String w= "WIRELESS";
-	
+	public static final String a = "TECHNOLOGY";
+	public static final String b = "CONNECTION";
 	public Mouse(String name , int year ,String constractor , double price ,String technology, String connection){
 		super(name, year, constractor, price);
 		this.technology = technology;
@@ -29,7 +30,7 @@ public class Mouse extends Regionals{
 		return connection;
 	}
 	public String toString(){
-		return String.format(super.toString() + "\ntechnology: " + this.technology + "\nconnection: " + this.connection );
+		return String.format(super.toString() + "\n" + a + ": " + this.technology + "\n" + b + ": " + this.connection );
 	}
 	
 }

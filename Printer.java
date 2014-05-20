@@ -5,7 +5,8 @@ public class Printer extends Regionals{
 	private static String y= "INKJET";
 	private static String z= "COLORED";
 	private static String w= "WHITEBLACK";
-	
+	public static final String a = "TECHNOLOGY";
+	public static final String b = "TYPE";
 	public Printer(String name , int year ,String constractor , double price ,String technology, String type){
 		super(name, year, constractor, price);
 		this.technology = technology;
@@ -29,7 +30,7 @@ public class Printer extends Regionals{
 		return type;
 	}
 	public String toString(){
-		return String.format(super.toString() + "\ntechnology: " + this.technology + "\ntype: " + this.type);
+		return String.format(super.toString() + "\n" + a + ": " + this.technology + "\n" + b + ": " + this.type);
 	}
 	
 }

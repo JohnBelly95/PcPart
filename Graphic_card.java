@@ -3,7 +3,8 @@ public class Graphic_card extends Pc_accessory {
 	int memory;
 	private static String x= "nVidia";
 	private static String y= "AMD";
-	
+	public static final String a = "CHIPSET";
+	public static final String b = "MEMORY";
 	public Graphic_card(String name , int year , String constractor , double price ,String chipset, int memory){
 		super(name, year, constractor, price);
 		this.chipset = chipset;
@@ -25,7 +26,7 @@ public class Graphic_card extends Pc_accessory {
 		return memory;
 	}
 	public String toString(){
-		return String.format(super.toString() + "\nchipset: " + this.chipset  + "\nmemory: " + this.memory );
+		return String.format(super.toString() + "\n" + a + ": " + this.chipset  + "\n" + b + ": " + this.memory );
 	}
 	
 }

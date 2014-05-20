@@ -5,7 +5,9 @@ public class RAM extends Pc_accessory {
 	private static String x= "DDR";
 	private static String y= "DDR2";
 	private static String z= "DDR3";
-	
+	public static final String a = "TYPE";
+	public static final String b = "SPEED";
+	public static final String c = "CAPACITY";
 	
 	public RAM(String name , int year , String constractor , double price ,String type, int speed, int capacity){
 		super(name, year, constractor, price);
@@ -37,7 +39,7 @@ public class RAM extends Pc_accessory {
 		return capacity;
 	}
 	public String toString(){
-		return String.format(super.toString() + "\ntype: " + this.type  + "\ncapacity: " + this.capacity  + "\nspeed: " + this.speed );
+		return String.format(super.toString() + "\n" + a + ": " + this.type  + "\n" + b + ": " + this.capacity  + "\n" + c + ": " + this.speed );
 	}
 	
 }

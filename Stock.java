@@ -11,7 +11,7 @@ public class Stock{
 		//stock.add(prod);
 		output.write("\n" + item + "\n{" + prod.toString() + "\n}",0,(prod.toString().length() + 8));
 		output.close();
-		String str = input.readLine();
+		String str = input.readLine()
 		System.out.println(str);
 	}
 	public void lookUp () {

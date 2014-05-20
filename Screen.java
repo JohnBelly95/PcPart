@@ -8,7 +8,10 @@ public class Screen extends Regionals {
 	private static String z= "HDMI";
 	private static String w= "DVI";
 	private static String q= "Composite";
-
+	public static final String a = "TYPE";
+	public static final String b = "SIZE";
+	public static final String c = "GATES";
+	public static final String d = "ANALYSIS";
 	
 	public Screen(String name , int year ,String constractor , double price ,String type , double size , String gates , String analysis){
 		super(name, year, constractor, price);
@@ -51,7 +54,7 @@ public class Screen extends Regionals {
 		return analysis;
 	}
 	public String toString(){
-		return String.format(super.toString() + "\ntype: " + this.type  + "\nsize: " + this.size  + "\nnumber of gates: " + this.gates + "\nanalysis: " + this.analysis);
+		return String.format(super.toString() + "\n" + a + ": " + this.type  + "\n" + b + ": " + this.size  + "\n" + c + ": " + this.gates + "\n" + d + ": " + this.analysis);
 	}
 	
 }

@@ -4,7 +4,9 @@ public class Harddrive extends Pc_accessory{
 	double size;
 	private static String x= "HDD";
 	private static String y= "SDD";
-	
+	public static final String a = "TYPE";
+	public static final String b = "SIZE";
+	public static final String c = "CAPACITY";
 	public Harddrive(String name , int year , String constractor , double price ,String type , double size ,int capacity){
 		super(name, year, constractor, price);
 		this.type = type;
@@ -33,7 +35,7 @@ public class Harddrive extends Pc_accessory{
 		return capacity;
 	}
 	public String toString(){
-		return String.format(super.toString() + "\ntype: " + this.type + "\ncapacity: " + this.capacity  + " \nsize: " + this.size );
+		return String.format(super.toString() + "\n" + a + ": " + this.type + "\n" + b + ": " + this.capacity  + "\n" + c + ": " + this.size );
 	}
 	
 	

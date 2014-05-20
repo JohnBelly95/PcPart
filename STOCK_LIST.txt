@@ -1,0 +1,10 @@
+ 
+ITEM
+{name of the product: MOTHERBOARD 
+creation year: 2006
+the constractor: Plaisio Productions
+price: 320.0
+final price: 240.0
+type:  INTEL
+memory: 32 
+number of gates: 4

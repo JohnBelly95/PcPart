@@ -3,7 +3,10 @@ public abstract class Store {
 	int year;
 	String constractor;
 	double price;
-	
+	public static final String a = "NAME";
+	public static final String b = "YEAR";
+	public static final String c = "MANUFACTURER";
+	public static final String d = "PRICE";
 	public Store(String name , int year , String constractor , double price){
 		this.name = name;
 		this.year = year;
@@ -36,7 +39,7 @@ public abstract class Store {
 		return price;
 	}
 	public String toString(){
-		return String.format("name of the product: " + this.name  + " \ncreation year: " + this.year  + "\nthe constractor: " + this.constractor  + "\nprice: " + this.price );
+		return String.format("\n" + a + ": " + this.name  + "\n" + b + ": " + this.year  + "\n" + c + ": " + this.constractor  + "\n" + d + ": " + this.price );
 	}
 	
 }
