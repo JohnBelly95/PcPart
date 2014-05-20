@@ -1,7 +1,7 @@
-
+import java.io.*;
 public class ListApp{
 	
-	public void work(){
+	public void work() throws FileNotFoundException, IOException{
 		Store p1=new Motherboard("MOTHERBOARD",2001,"Plaisio Productions",320," INTEL",32 ,4);
 		Store p2= new RAM("RAM",2003,"plaisio productions",175,"DDR2",4,1600);
 		Store p3= new Harddrive("HARDDRIVE",1994,"plaisio productions",99,"HDD",2.5,1000);

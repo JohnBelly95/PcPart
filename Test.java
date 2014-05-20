@@ -1,34 +1,18 @@
 import java.util.*;
 import java.io.*;
 public class Test{
-	private static String item = "ITEM";
-	static FileReader in ;
-	static FileWriter out;
-	static BufferedReader input;
-	static BufferedWriter output;
 	
-	public static void main(String args[]) throws FileNotFoundException, IOException{
-		try {
-			in = new FileReader("STOCK_LIST.txt");
-			out = new FileWriter("STOCK_LIST.txt");
-            input = new BufferedReader(in);
-			output = new BufferedWriter(out);
-			String inputLine = null;
-			output.write(" ");
-			while((inputLine = input.readLine()) != null)
-				System.out.println(inputLine);
-		}
-		catch(IOException ex) {
-			System.err.println("An IOException was caught!");
-            ex.printStackTrace();
-        }
-		FileReader in = new FileReader("STOCK_LIST.txt");
-		BufferedReader input = new BufferedReader(in);
-		Store Item = new Motherboard("MOTHERBOARD",2006,"Plaisio Productions",320," INTEL",32 ,4);;
-		output.write("\n" + item + "\n{" + Item.toString() + "\n}",0,(Item.toString().length() + 8));
-		output.close();
-		String str = input.readLine();
-		System.out.println(str);
-		System.out.println(Item);
+	
+	public static void main(String args[])throws FileNotFoundException, IOException{
+		
+		Store p1 = new Motherboard("11gf145546g",2006,"samsung",320," INTEL",32 ,4);;
+		Store p2 = new RAM("134f145fr",2003,"baracuda",175,"DDR2",4,1600);
+		Item i1 = new Item(p1,3);
+		Item i2 = new Item(p2,7);
+		Stock stk = new Stock();
+		stk.addProduct(i1);
+		stk.addProduct(i2);
+		
+		
 	}
 }

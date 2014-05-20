@@ -14,7 +14,7 @@ public class Screen extends Regionals {
 	public static final String d = "ANALYSIS";
 	
 	public Screen(String name , int year ,String constractor , double price ,String type , double size , String gates , String analysis){
-		super(name, year, constractor, price);
+		super(name, year, constractor, price,"MONITOR");
 		this.type = type;
 		this.size = size;
 		this.gates = gates;
@@ -54,7 +54,7 @@ public class Screen extends Regionals {
 		return analysis;
 	}
 	public String toString(){
-		return String.format(super.toString() + "\n" + a + ": " + this.type  + "\n" + b + ": " + this.size  + "\n" + c + ": " + this.gates + "\n" + d + ": " + this.analysis);
+		return String.format(super.toString() + "\n\t\t" + a + ": " + this.type  + "\n\t\t" + b + ": " + this.size  + "\n\t\t" + c + ": " + this.gates + "\n\t\t" + d + ": " + this.analysis);
 	}
 	
 }

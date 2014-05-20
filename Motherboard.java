@@ -8,7 +8,7 @@ public class Motherboard extends Pc_accessory {
 	public static final String b = "MEMORY";
 	public static final String c = "GATES";
 	public Motherboard(String name , int year , String constractor , double price, String type, int memory, int gates_num){
-		super(name, year, constractor, price );
+		super(name, year, constractor, price,"MOTHERBOARD" );
 		this.type = type;
 		this.memory = memory;
 		this.gates_num = gates_num;
@@ -34,7 +34,7 @@ public class Motherboard extends Pc_accessory {
 		return gates_num;
 	}
 	public String toString(){
-		return String.format(super.toString() + "\n" + a + ": " + this.type  + "\n" + b + ": " + this.memory  + "\n" + c + ": " + this.gates_num );
+		return String.format(super.toString() + "\n\t\t" + a + ": " + this.type  + "\n\t\t" + b + ": " + this.memory  + "\n\t\t" + c + ": " + this.gates_num );
 	}
 	
 	

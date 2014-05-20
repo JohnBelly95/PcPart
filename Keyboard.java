@@ -4,7 +4,7 @@ public class Keyboard extends Regionals{
 	private static String y= "WIRELESS";
 	public static final String a = "CONNECTION";
 	public Keyboard(String name , int year ,String constractor , double price ,String connection){
-		super(name ,year ,constractor ,price);
+		super(name ,year ,constractor ,price,"KEYBOARD");
 		this.connection = connection;
 	}
 	
@@ -17,7 +17,7 @@ public class Keyboard extends Regionals{
 		return connection;
 	}
 	public String toString(){
-		return String.format(super.toString() + "\n" + a + ": " + this.connection );
+		return String.format(super.toString() + "\n\t\t" + a + ": " + this.connection );
 	}
 	
 }

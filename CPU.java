@@ -4,7 +4,7 @@ public class CPU extends Pc_accessory{
 	public static final String a = "SPEED";
 	public static final String b = "CORES";
 	public CPU(String name , int year , String constractor , double price, double speed, int core_num){
-		super(name, year , constractor, price);
+		super(name, year , constractor, price,"CPU");
 		this.speed = speed;
 		this.core_num = core_num;
 	}
@@ -22,7 +22,7 @@ public class CPU extends Pc_accessory{
 		return core_num;
 	}
 	public String toString(){
-		return String.format(super.toString() + "\n" + a + ": " + this.speed  + "\n" + b + ": " + this.core_num );
+		return String.format(super.toString() + "\n\t\t" + a + ": " + this.speed  + "\n\t\t" + b + ": " + this.core_num );
 	}
 	
 }

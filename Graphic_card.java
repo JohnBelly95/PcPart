@@ -5,8 +5,8 @@ public class Graphic_card extends Pc_accessory {
 	private static String y= "AMD";
 	public static final String a = "CHIPSET";
 	public static final String b = "MEMORY";
-	public Graphic_card(String name , int year , String constractor , double price ,String chipset, int memory){
-		super(name, year, constractor, price);
+	public Graphic_card(String name , int year , String constractor , double price, String chipset, int memory){
+		super(name, year, constractor, price, "GRAPHIC_CARD");
 		this.chipset = chipset;
 		this.memory = memory;
 	}
@@ -26,7 +26,7 @@ public class Graphic_card extends Pc_accessory {
 		return memory;
 	}
 	public String toString(){
-		return String.format(super.toString() + "\n" + a + ": " + this.chipset  + "\n" + b + ": " + this.memory );
+		return String.format(super.toString() + "\n\t\t" + a + ": " + this.chipset  + "\n\t\t" + b + ": " + this.memory );
 	}
 	
 }

@@ -8,7 +8,7 @@ public class Mouse extends Regionals{
 	public static final String a = "TECHNOLOGY";
 	public static final String b = "CONNECTION";
 	public Mouse(String name , int year ,String constractor , double price ,String technology, String connection){
-		super(name, year, constractor, price);
+		super(name, year, constractor, price,"MOUSE");
 		this.technology = technology;
 		this.connection = connection;
 	}
@@ -30,7 +30,7 @@ public class Mouse extends Regionals{
 		return connection;
 	}
 	public String toString(){
-		return String.format(super.toString() + "\n" + a + ": " + this.technology + "\n" + b + ": " + this.connection );
+		return String.format(super.toString() + "\n\t\t" + a + ": " + this.technology + "\n\t\t" + b + ": " + this.connection );
 	}
 	
 }
